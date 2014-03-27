@@ -1,5 +1,6 @@
 /* Base */
 /* #push.height = -#content-sans-footer.margin-bottom = #footer.margin-top + ul.footer-content */
+@import url(http://fonts.googleapis.com/css?family=Play&subset=cyrillic-ext,latin);
 body,
 html {
     height: 100%;
@@ -17,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, Serif;
+    font-family: Play, Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, Serif;
     font-weight: normal;
 }
 h1 small, h1 a, h1 a:hover,
@@ -36,9 +37,33 @@ hr {
     border-width: 3px;
 }
 
+/* change font in body */
+
+.body-my-font {
+    font-family: Play, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* change search */
+
+.navbar-search .search-query {
+    font-family: Play, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar-search {
+        margin-left: 5px;
+}
+
+/* shodow for imgs */
+
+#content img { 
+box-shadow: #000 0 0 10px;
+webkit-box-shadow: #000 0 0 10px; 
+-moz-box-shadow: #000 0 0 10px; 
+}
+
 /* site title */
 .site-name {
-    font-family: 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, Monospace;
+    font-family: Play, 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, Monospace;
 }
 /* Top navigation menu */
 .top-menu li a {
@@ -87,7 +112,7 @@ ul.footer-content li {
     text-shadow: 0 0;
 }
 .disqus-comment-count {
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+    font-family: Play, 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: .9em;
 }
 #disqus_thread {
@@ -115,6 +140,7 @@ td {
     overflow: hidden;
 }
 pre {
+    font-family: Play, Monaco,Menlo,Consolas,"Courier New",monospace;
     overflow: auto;
     white-space: pre;
     word-break: normal;
@@ -140,7 +166,7 @@ div.highlight {
 }
 /* Tags */
 .list-of-tags {
-    font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+    font-family: 'Play', Helvetica Neue', Helvetica, Arial, Sans-Serif;
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -167,7 +193,7 @@ div.highlight {
     line-height: 28px;
 }
 .tag-title {
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+    font-family: Play, 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 .articles-in-tag li {
     font: 1.1em/1.6em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
@@ -218,7 +244,7 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     position:absolute;
 }
 .article-content blockquote {
-    font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+    font-family: 'Play', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     font-size: inherit;
     font-variant: normal;
     line-height: 1.7em;
@@ -399,7 +425,7 @@ a.category-link:hover {
     text-decoration: none;
 }
 a.list-of-categories {
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+    font-family: Play, 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: 1.1em;
 }
 a.list-of-categories:hover {
@@ -414,7 +440,7 @@ ul.list-all-articles {
 }
 ul.list-all-articles li {
     border-bottom: 1px dotted #000;
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+    font-family: Play, 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: 1.1em;
     padding: .3em 0;
     overflow: auto;
@@ -422,7 +448,7 @@ ul.list-all-articles li {
 ul.list-all-articles li time {
     color: #AAA;
     float: right;
-    font-family: 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
+    font-family: Play, 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
     font-size: .9em;
 }
 div.blog-archives h2 {
@@ -487,7 +513,7 @@ div.recent-posts-time {
 }
 /* MailChimp */
 #mc-embed-signup {
-    font-family: inherit;
+    font-family: Play, inherit;
     font-size: inherit;
     margin: 10px 0;
 }
@@ -572,14 +598,14 @@ a#allposts:hover {
     border-radius: 3px;
     border: 1px solid #e1e1e8;
     color: #d14;
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-family: Play, Monaco, Menlo, Consolas, "Courier New", monospace;
     font-size: 12px;
     padding: 2px 4px;
     white-space: nowrap;
 }
 /* Helper CSS classes */
 .amp {
-    font-family: 'Warnock Pro', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Serif;
+    font-family: Play, 'Warnock Pro', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Serif;
     font-style: italic;
 }
 /* Use following classes to add floating images to your post */
