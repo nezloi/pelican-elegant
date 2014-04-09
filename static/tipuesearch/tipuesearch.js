@@ -222,17 +222,17 @@ http://www.tipue.com/search
                          {
                               if (show_replace == 1)
                               {
-                                   out += '<div id="tipue_search_warning_head">Showing results for ' + d + '</div>';
+                                   out += '<div id="tipue_search_warning_head">Показать варианты для ' + d + '</div>';
                                    out += '<div id="tipue_search_warning">Search for <a href="javascript:void(0)" id="tipue_search_replaced">' + d_r + '</a></div>'; 
                               }
                               if (c == 1)
                               {
-                                   out += '<div id="tipue_search_results_count">1 result</div>';
-                              }
+                                   out += '<div id="tipue_search_results_count">1 вариант</div>';
+                              }              
                               else
                               {
                                    c_c = c.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                                   out += '<div id="tipue_search_results_count">' + c_c + ' results</div>';
+                                   out += '<div id="tipue_search_results_count">' + c_c + ' варианта(ов)</div>';
                               }
                               
                               found.sort();
@@ -344,10 +344,10 @@ http://www.tipue.com/search
                          }
                          else
                          {
-                              out += '<div id="tipue_search_warning_head">Search too short</div>';
+                              out += '<div id="tipue_search_warning_head">Слишком короткий запрос</div>';
                               if (set.minimumLength == 1)
                               {
-                                   out += '<div id="tipue_search_warning">Should be one character or more</div>';
+                                   out += '<div id="tipue_search_warning">Должно быть не менее 3 символов</div>';
                               }
                               else
                               {
