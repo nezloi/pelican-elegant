@@ -27,7 +27,7 @@ $('#disqus_thread').on('shown', function () {
     var link = document.getElementsByClassName('accordion-toggle');
     var old_innerHTML = link[0].innerHTML;
     $(link[0]).fadeOut(500, function() {
-        $(this).text('Click here to hide comments').fadeIn(500);
+        $(this).text('Скрыть комментарии').fadeIn(500);
     });
     $('#disqus_thread').on('hidden', function () {
         $(link[0]).fadeOut(500, function() {
