@@ -32,11 +32,7 @@
     {% if article.toc %}
     <div class="span2 table-of-content">
         <nav>
-<<<<<<< HEAD
         <h4>Содержание</h4>
-=======
-        <h4>Contents</h4>
->>>>>>> master
         {{ article.toc }}
         </nav>
     </div>
@@ -84,30 +80,18 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             {% if article.date %}
-<<<<<<< HEAD
             <h4>Опубликовано</h4>
-=======
-            <h4>Published</h4>
->>>>>>> master
             {% set day = article.date.strftime('%d')|int %}
             <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
             {% endif %}
             {% include '_includes/last_updated.html' %}
             {% include '_includes/multi_parts.html' %}
             {% if article.category|trim|count > 0 %}
-<<<<<<< HEAD
             <h4>Категория</h4>
             <a class="category-link" href="{{ SITEURL }}/categories.html#{{ category.slug }}-ref">{{ article.category }}</a>
             {% endif %}
             {% if article.tags and article.tags[0]|trim|count > 0 %}
             <h4>Теги</h4>
-=======
-            <h4>Category</h4>
-            <a class="category-link" href="{{ SITEURL }}/categories.html#{{ category.slug }}-ref">{{ article.category }}</a>
-            {% endif %}
-            {% if article.tags and article.tags[0]|trim|count > 0 %}
-            <h4>Tags</h4>
->>>>>>> master
             <ul class="list-of-tags tags-in-article">
                 {% for tag in article.tags|sort %}
                 <li><a href="{{ SITEURL }}/tags.html#{{ tag.slug }}-ref">{{ tag }}
