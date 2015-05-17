@@ -472,13 +472,17 @@ div.blog-archives article {
 div.blog-archives article.last-entry-of-year {
     margin-bottom: 1em;
 }
-div.blog-archives time, div.recent-posts time {
+div.blog-archives time {
     float: right;
     text-align: right;
 }
+div.recent-posts time {
+    #float: right;
+    #text-align: right;
+}
 div.blog-archives time, div.recent-posts time, div.recent-posts section {
     color: #8F8F8F;
-    font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
+    font: .9em Play, 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
 }
 div.recent-posts section a {
     color: inherit;
@@ -589,7 +593,7 @@ a#allposts:hover {
 }
 .proj-desc {
     color: #999;
-    font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
+    font: .9em Play, 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
 }
 /* reST specific rules*/
 .literal {

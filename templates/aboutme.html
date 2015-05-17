@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Обо мне · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+Страница на сайте {{ SITENAME|striptags }} обо мне. 
+{% endblock head_description %}
+{% block content %}
+<div class="row-fluid">
+    {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
+    {% set css_class = 'span10 offset2' %}
+    <header class="page-header {{css_class}}">
+    <h1><a href="{{ SITEURL }}/aboutme.html">{{ LANDING_PAGE_ABOUT.title }}</a></h1>
+    </header>
+    {% endif %}
+
+    <div class="row-fluid">
+        {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.details %}
+        {% set css_class = 'span8 offset2' %}
+        <div class="{{css_class}}">
+            <header>
+            <h1 id="about-me">Обо мне</h1>
+            </header>
+            <div class="article-content">
+                {{ LANDING_PAGE_ABOUT.details }}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock content %}
